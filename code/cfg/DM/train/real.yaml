@@ -1,0 +1,19 @@
+dataset_names_list:
+  - EmbedDataset
+  - EmbedDataset
+
+dataset_kwargs_list:
+  - FinalImageType: ['2D']
+    existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_dm.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+  - FinalImageType: ['2D']
+    existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_2d_short.csv'
+      keyword: 'train'
+    sample_balance: 'negative'
+
+batch_size_list: [12, 12]

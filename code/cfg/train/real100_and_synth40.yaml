@@ -1,0 +1,28 @@
+dataset_names_list:
+  - EmbedDataset
+  - EmbedDataset
+  - DbtSynthDataset
+
+dataset_kwargs_list:
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+    one_image_per_patient: True
+    num_positive: 400
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'negative'
+    num_negative: 400
+    one_image_per_patient: True
+  - lesion_densities: ['1.0', '1.06', '1.1']
+    breast_densities: ['fatty', 'scattered', 'hetero', 'dense']
+    lesion_sizes: ['5.0', '7.0', '9.0']
+    patient_range: [1, 201]
+    lesion_only: False
+    image_mode: 'cview'
+    num_positive: 160
+    num_negative: 160
+
+batch_size_list: [8, 8, 10]

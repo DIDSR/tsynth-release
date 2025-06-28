@@ -1,0 +1,15 @@
+dataset_name : 'DbtSynthDataset'
+dataset_kwargs: 
+  lesion_densities: ['1.0', '1.06', '1.1']
+  breast_densities: ['fatty', 'scattered', 'hetero', 'dense']
+  lesion_sizes: ['5.0', '7.0', '9.0']
+  patient_range: [251, 301]
+  lesion_only: False,
+  image_mode: 'cview'
+batch_size: 16
+extra_columns_keys:
+  - 'raw_path'
+  - 'breast_density'
+  - 'lesion_density'
+  - 'lesion_size'
+  

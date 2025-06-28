@@ -1,0 +1,27 @@
+dataset_names_list:
+  - EmbedDatasetGenAI_3
+  - EmbedDataset
+  - EmbedDataset
+
+dataset_kwargs_list:
+  - root_dir: "/projects01/VICTRE/anastasii.sarmakeeva/syntheticDiffusion_breast_data_EMBED_base/DBT"
+    data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+    one_image_per_patient: True
+    num_positive: 400
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+    one_image_per_patient: True
+    num_positive: 400
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'negative'
+    num_negative: 400
+    one_image_per_patient: True
+
+batch_size_list: [9,3,12]

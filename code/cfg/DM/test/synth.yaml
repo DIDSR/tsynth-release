@@ -1,0 +1,14 @@
+dataset_name : 'MSynthDetectionDataset'
+dataset_kwargs: 
+  root_dir': "/projects01/didsr-aiml/common_data/MSYNTH_data/"
+  lesion_densities: ['1.0', '1.06', '1.1']
+  breast_densities: ['fatty', 'scattered', 'hetero', 'dense']
+  lesion_sizes: ['5.0', '7.0', '9.0']
+  patient_range: [251, 301]
+  lesion_only: False
+batch_size: 16
+extra_columns_keys:
+  - 'raw_path'
+  - 'breast_density'
+  - 'lesion_density'
+  - 'lesion_size'

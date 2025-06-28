@@ -1,0 +1,17 @@
+dataset_names_list:
+  - EmbedDataset
+  - EmbedDataset
+
+dataset_kwargs_list:
+  - existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+  - existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'negative'
+
+batch_size_list: [12, 12]

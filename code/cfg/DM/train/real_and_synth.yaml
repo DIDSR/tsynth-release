@@ -1,0 +1,28 @@
+dataset_names_list:
+  - EmbedDataset
+  - EmbedDataset
+  - MSynthDetectionDataset
+
+dataset_kwargs_list:
+  - FinalImageType: ['2D']
+    existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_dm.csv'
+      keyword: 'train'
+    percent_samples_included: 1.0
+    sample_balance: 'positive'
+  - FinalImageType: ['2D']
+    existing_paths: 'existing_Embed_fileset.pkl'
+    data_split_dict:
+      csv_file: 'EMBED_split_dm.csv'
+      keyword: 'train'
+    percent_samples_included: 1.0
+    sample_balance: 'negative'
+  - root_dir: "/projects01/didsr-aiml/common_data/MSYNTH_data/"
+    lesion_densities: ['1.0', '1.06', '1.1']
+    breast_densities: ['fatty', 'scattered', 'hetero', 'dense']
+    lesion_sizes: ['5.0', '7.0', '9.0']
+    patient_range: [1,201]
+    lesion_only: False
+
+batch_size_list: [8, 8, 10]

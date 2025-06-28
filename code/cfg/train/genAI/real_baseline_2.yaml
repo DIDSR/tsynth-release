@@ -1,0 +1,19 @@
+dataset_names_list:
+  - EmbedDataset
+  - EmbedDataset
+
+dataset_kwargs_list:
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'positive'
+    one_image_per_patient: True
+    num_positive: 100
+  - data_split_dict:
+      csv_file: 'EMBED_split_dbt.csv'
+      keyword: 'train'
+    sample_balance: 'negative'
+    num_negative: 400
+    one_image_per_patient: True
+
+batch_size_list: [12,12]

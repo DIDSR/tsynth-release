@@ -1,0 +1,1 @@
+dir_global = '/projects01/VICTRE/elena.sizikova/code/breast/tsynth_data/'

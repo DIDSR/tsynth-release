@@ -1,0 +1,13 @@
+dataset_name: 'EmbedDataset'
+dataset_kwargs:
+  FinalImageType: ['2D']
+  existing_paths: 'existing_Embed_fileset.pkl'
+  data_split_dict:
+    csv_file: 'EMBED_split_dm.csv'
+    keyword: 'val'
+  sample_balance: 'balanced'
+batch_size: 16
+extra_columns_keys:
+  - "anon_dicom_path"
+  - "breast_density"
+
