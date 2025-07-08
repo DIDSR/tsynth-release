@@ -4,7 +4,7 @@
 
 "_T-SYNTH: A Knowledge-Based Dataset of Synthetic Breast Images_"
 
-Christopher Wiedeman*, Anastasiia Sarmakeeva*, Elena Sizikova, Daniil Filienko, Miguel Lago, Jana Delfino, Aldo Badano 
+[Christopher Wiedeman*](https://www.linkedin.com/in/christopher-wiedeman-a0b01014b), [Anastasiia Sarmakeeva*](https://www.linkedin.com/in/anastasiia-sarmakeeva), [Elena Sizikova](https://elenasizikova.github.io/), [Daniil Filienko](https://www.linkedin.com/in/daniil-filienko-800160215), [Miguel Lago](https://www.linkedin.com/in/milaan/), [Jana Delfino](https://www.linkedin.com/in/janadelfino/), [Aldo Badano](https://www.linkedin.com/in/aldobadano/) 
 
 (* - equal contribution)
 
@@ -16,3 +16,5 @@ The contributions of our work are:
 * We train detection models on limited patient data in both DM and DBT (C-View), and show that augmenting training data with T-SYNTH can improve performance.
 
 **Huggingface Data Repository**: [https://huggingface.co/datasets/didsr/tsynth](https://huggingface.co/datasets/didsr/tsynth)
+
+**Arxiv**: [https://arxiv.org/abs/2507.04038](https://arxiv.org/abs/2507.04038)
