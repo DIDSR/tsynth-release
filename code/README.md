@@ -39,7 +39,7 @@
    python -u download_scripts/download_embed_metadata.py
    ```
 
-- We provide pre-generated c-view images for all T-SYNTH examples, and release a few volumes on hugging face (all DBT volumes can be downloaded via instructions in [**(Optional) Download All Volumes**](#optional-download-all-volumes). The process of creating c-view from DBT for a single example can be replicated via:
+- We provide pre-generated c-view images for all T-SYNTH examples, and release a few volumes on hugging face. All DBT volumes can be downloaded via instructions in [**(Optional) Download All Volumes**](#optional-download-all-volumes). The process of creating c-view from DBT for a single example can be replicated via:
    ``` 
    python -u download_scripts/download_volumes.py
    jupyter notebook notebooks/create_cview.ipynb
@@ -161,21 +161,21 @@ done
 ```
 
 ## (Optional) Download All Volumes
-- Create an account and log in to [precisionFDA](https://precision.fda.gov/). 
+- Create an account and log in to [precisionFDA](http://precision.fda.gov/). 
 
-- Download and extract the command line interface (CLI) tool for your specific OS (see instructions [here](https://precision.fda.gov/docs/guides/cli]), for example:
+- Download and extract the command line interface (CLI) tool for your specific OS (see [instructions](http://precision.fda.gov/docs/guides/cli#download-the-cli])), for example:
    ```
    wget https://pfda-production-static-files.s3.amazonaws.com/cli/pfda-linux-2.10.3.tar.gz
    tar zxvf pfda-linux-2.10.3.tar.gz
    ```
 
-- Set up your CLI key (see [instructions](https://precision.fda.gov/docs/guides/cli#authorization-key)):
+- Set up your CLI key (see [instructions](http://precision.fda.gov/docs/guides/cli#authorization-key)):
    ```
    KEY=YOUR-KEY-HERE
    pfda ls -key $KEY
    ```
 
-- Check the folder id of the folder you'd like to download in the URL in the browser precisionFDA is opened (see list of all subfolders available [here](https://precision.fda.gov/home/files?scope=everybody&folder_id=8716550), making sure you have ```scope=everybody``` included) and navigate the subfolders). For instance, to download example 300 generated with lesion density 1.0, fatty breast, lesion size 7.0, run the following:
+- Check the folder id of the folder you'd like to download in the URL in the browser precisionFDA is opened (see list of all subfolders available [here](http://precision.fda.gov/home/files?scope=everybody&folder_id=8716550)), making sure you have ```scope=everybody``` included and navigate the subfolders. For instance, to download example 300 generated with lesion density 1.0, fatty breast, lesion size 7.0, run the following:
    ```
    pfda -folder-id 8726058 -recursive -public 
    ```
