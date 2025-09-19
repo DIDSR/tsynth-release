@@ -8,6 +8,14 @@
 
 (* - equal contribution)
 
+International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI) Open Data 2025
+
+* **Huggingface Data Repository**: [https://huggingface.co/datasets/didsr/tsynth](https://huggingface.co/datasets/didsr/tsynth)
+
+* **Arxiv**: [https://arxiv.org/abs/2507.04038](https://arxiv.org/abs/2507.04038)
+
+* **Poster**: [https://github.com/DIDSR/tsynth-release/blob/main/images/poster.pdf](https://github.com/DIDSR/tsynth-release/blob/main/images/poster.pdf)
+
 ![overview](images/summary_figure.png)
 
 The contributions of our work are:
@@ -15,6 +23,15 @@ The contributions of our work are:
 * We demonstrate how T-SYNTH can be used for subgroup analysis. Specifically, Faster-RCNN is trained for and evaluated for lesion detection in a balanced dataset; results reveal expected trends in subgroup performance in both DM and (C-View) DBT (e.g., less dense lesions are harder to detect). 
 * We train detection models on limited patient data in both DM and DBT (C-View), and show that augmenting training data with T-SYNTH can improve performance.
 
-**Huggingface Data Repository**: [https://huggingface.co/datasets/didsr/tsynth](https://huggingface.co/datasets/didsr/tsynth)
+## Citation
 
-**Arxiv**: [https://arxiv.org/abs/2507.04038](https://arxiv.org/abs/2507.04038)
+```
+@article{t-synth,
+  title={{T-SYNTH}: A Knowledge-Based Dataset of Synthetic Breast Images},
+  author={Christopher Wiedeman, Anastasiia Sarmakeeva, Elena Sizikova, Daniil Filienko, Miguel Lago, Jana G. Delfino, Aldo Badano},
+  journal={MICCAI Open Data},
+  volume={},
+  pages={},
+  year={2025}
+}
+```
